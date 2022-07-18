@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search results</title>
+
+    <style>
+       #navbar{
+        height: 80px;
+        width: 100%;
+        background-color: beige;
+        color:white ;
+    }
+    
+    #search_input{
+      margin-top: 15px;
+      padding: 10px 80px;
+      margin-left: 40%;
+    }
+    a{
+      font-size: 18px;
+      margin-left: 40px;
+    }
+      #results{
+       display: grid; 
+       grid-template-columns: repeat(3,1fr);
+       grid-template-rows: auto;
+       gap: 20px;
+       justify-content: center;
+       /* height: 400px; */
+border: 1px solid blue;
+      }
+      img{
+        height: 300px;
+        width: 70%;
+      }
+      /* p{
+        margin-left: 60%;
+      } */
+     
+
+   
+    </style>
+  </head>
+  <body>
+
+
+    <div id="navbar">
+      <!-- <a href="index.html">NewsApp</a>
+      <input type="search" id="search_input" placeholder="Search_News" onkeydown="search(event)"> -->
+
+    </div>
+    <div id="block-1">
+      <div id="sidebar">
+        <h1>Countries</h1>
+       <h3 id="in" onclick="cSearch(this.id)">India</h3>
+        <h3 id="ch" onclick="cSearch(this.id)">chaina</h3>
+        <h3 id="us" onclick="cSearch(this.id)">Us</h3>
+        <h3 id="uk" onclick="cSearch(this.id)">Uk</h3>
+        <h3 id="nz" onclick="cSearch(this.id)">Newsland</h3>
+      
+
+      </div>
+      <div id="results"></div>
+
+    </div>
+    <!-- Same navbar with same functionality  -->
+
+    <!-- Append results inside div with id "results"  -->
+    <!-- News divs will have class "news"  -->
+  </body>
+</html>
+<script src="/scripts/search.js" type="module">
+
+
+</script>
+
+<!-- async function search(search_input){
+
+
+let url1=`https://masai-api.herokuapp.com/news?q=${search_input}`
+
+let res=await fetch(url1)
+let data=await res.json()
+console.log(data)
+
+
+} -->

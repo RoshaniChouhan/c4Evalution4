@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detailed news</title>
+    <style>
+      #navbar{
+        height: 80px;
+        width: 100%;
+        background-color: beige;
+        color:white ;
+    }
+    
+    #search_input{
+      margin-top: 15px;
+      padding: 10px 80px;
+      margin-left: 40%;
+    }
+    a{
+      font-size: 18px;
+      margin-left: 40px;
+    }
+    #detailed_news {
+       display: grid; 
+       grid-template-columns: repeat(3,1fr);
+       grid-template-rows: auto;
+       gap: 20px;
+       justify-content: center;
+       /* height: 400px; */
+border: 1px solid blue;
+      }
+      img{
+        height: 300px;
+        width: 70%;
+      }
+      /* p{
+        margin-left: 60%;
+      } */
+     
+
+    </style>
+    </style>
+  </head>
+  <body>
+    
+    <div id="navbar">
+      <!-- <a href="index.html">NewsApp</a>
+      <input type="search" id="search_input" placeholder="Search_News" onkeydown="search(event)"> -->
+
+    </div> 
+    <div id="detailed_news"></div>
+    <!-- Same navbar with same functionality  -->
+    <!-- Append detailed news in div with id "detailed_news"  -->
+  </body>
+</html>
+<script src="./scripts/news.js" type="module"></script>
+
